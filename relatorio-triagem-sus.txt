@@ -1,0 +1,25 @@
+RESUMO EXECUTIVO
+O sistema Triagem SUS visa otimizar o atendimento nas unidades de saúde, utilizando um modelo de triagem automatizada para priorização de pacientes.
+
+PROBLEMA IDENTIFICADO
+Superlotação e desorganização na triagem de pacientes, sem critério técnico claro para priorização de atendimentos.
+
+SOLUÇÃO PROPOSTA
+Implementação de um backend que registra pacientes, sintomas e determina a prioridade automaticamente, com base em critérios simples. Ex: sintomas como "falta de ar" são emergência.
+
+PROCESSO DE DESENVOLVIMENTO
+Foi utilizada arquitetura limpa com divisão entre domínio, aplicação e infraestrutura. O projeto foi desenvolvido com base em boas práticas, incluindo testes automatizados e documentação Swagger.
+
+TECNOLOGIAS
+- Java 17
+- Spring Boot 3
+- JPA/Hibernate
+- PostgreSQL
+- Swagger (Springdoc)
+- JUnit 5 + Mockito
+- Maven
+
+PRÓXIMOS PASSOS
+- Autenticação de profissionais de saúde
+- Histórico de triagens
+- Dashboard com estatísticas de atendimento
