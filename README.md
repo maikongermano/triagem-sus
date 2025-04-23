@@ -23,6 +23,32 @@ Este projeto segue o padrão de **Arquitetura Limpa**, com separação de respon
 - `infrastructure.service` → Implementações dos serviços
 - `infrastructure.controller` → Controladores REST
 
+## ✅ Funcionalidades
+
+- **Cadastro de Pacientes**  
+  Armazena informações como nome, CPF e data de nascimento.
+
+- **Cadastro de Sintomas**  
+  Permite registrar sintomas clínicos comuns reportados na triagem.
+
+- **Triagem de Pacientes**  
+  Realiza a triagem com base nos sintomas informados, classificando automaticamente:
+  - `EMERGENCIA` → Ex: "dor no peito", "falta de ar"
+  - `URGENTE` → Três ou mais sintomas leves
+  - `NAO_URGENTE` → Um ou dois sintomas leves
+
+- **Listagem de Triagens por Prioridade**  
+  Retorna as triagens ordenadas por prioridade e data/hora da chegada.
+
+- **Documentação com Swagger**  
+  A interface interativa via Swagger facilita a visualização e teste das rotas.
+
+- **Banco H2 em Memória (modo dev)**  
+  Permite rodar o projeto sem depender de banco externo.
+
+- **Cobertura de Testes Unitários**  
+  Inclui testes para todos os serviços e controladores.
+
 ## 📦 Como Rodar Localmente
 
 1. **Clone o repositório**
